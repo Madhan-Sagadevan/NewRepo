@@ -1,0 +1,15 @@
+name: Test Auto Run
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ['main']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: action/checkout@v4
+
+    
